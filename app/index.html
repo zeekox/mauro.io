@@ -3,9 +3,11 @@ layout: default
 title: Your New Jekyll Site
 ---
 
-<section class="home posts">
-  <h1>Blog Posts</h1>
+<header class="sidebar">mauro.io</header>
+<section class="content">
   {% for post in site.posts %}
-    <article><time>{{ post.date | date_to_string }}</time> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></article>
+    <article><time>{{ post.date | date_to_string }}</time>
+      {{ post.content }}
+    </article>
   {% endfor %}
 </section>
