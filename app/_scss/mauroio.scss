@@ -1,76 +1,103 @@
 @import "compass/layout/stretching";
 @import "compass/utilities";
 @import "compass/css3";
+@import "compass/typography/vertical_rhythm";
+@import url(http://fonts.googleapis.com/css?family=Noticia+Text);
 
-$break-small: 320px;
-$break-large: 1024px;
+$base-font-size: 16px;
+$base-line-height: 24px;
+
+@include establish-baseline;
+
+$break-small: 1024px;
+$break-large: 1800px;
+$top-stretch: 5%;
+$v-stretch: 5%;
+$h-stretch: 10%;
+
+html,
+button,
+input,
+select,
+textarea {
+	color: #222;
+	background-color: #3f3f3f;
+	font-family: 'Noticia Text', sans-serif;
+}
 
 @mixin media($media) {
-  @if $media == small {
-    @media only screen and (max-width: $break-small) { @content; }
-  }
-  @else if $media == medium {
-    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
-  }
-  @else if $media == wide {
-    @media only screen and (min-width: $break-large) { @content; }
-  }
+	@if $media == small {
+		@media only screen and (max-width: $break-small) { @content; }
+	}
+	@else if $media == medium {
+		@media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+	}
+	@else if $media == wide {
+		@media only screen and (min-width: $break-large) { @content; }
+	}
 }
 
 .mauroio {
-  @include display-box;
-  @include box-orient(vertical);
-  @include box-align(stretch);
-  @include box-direction(reverse);
-  //height: 100%;
-  //width: 100%;
-  .content, .sidebar {
-    padding: 20px; 
-  }
-  .content {
-  	@extend .stretch-offset;
-  }
-  .sidebar {
-    @include box-flex(1);
-    background-color: #375f99;
-    margin-right: 1px;
+
+	@extend .stretch-offset;
+
+	header {
+		@include adjust-font-size-to(42px);
+	}
+
+	.post {
+
+		.post-content, .date {
+			margin-left: 1em;
+			display: inline-block;
+			vertical-align: top;
+		}
+		
+		.date {
+			box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+			@include adjust-font-size-to(35px);
+			height: 3em;
+		} 
 	}
 }
 
 .stretch-container {
-  border: 1px solid #999999;
-  width: 200px;
-  height: 200px;
-  position: relative;
-  @include inline-block; }
- 
-.stretched {
-  $stretch-color: #4c6b99;
-  border: 3px solid $stretch-color;
-  @include border-radius(8px);
-  display: block;
-  background-color: darken($stretch-color, 30%);
-  color: white;
-  vertical-align: middle;
-  padding: 0.5em; }
- 
-.stretch-full {
-  @extend .stretched;
-  @include stretch; }
- 
-.stretch-offset {
-  @extend .stretched;
-	@include media(small) { @include stretch(5em, 1em, 1em, 1em); }
-  @include media(medium) { @include stretch(5em, 1em, 1em, 1em); }
-  @include media(wide) { @include stretch(5em, 10em, 1em, 10em); }
+	border: 1px solid #999999;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	@include inline-block; }
+
+.posts {
+	//border: 1px solid #999999;
 }
-  
+
+.post-content {
+	$stretch-color: #4c6b99;
+	border: 3px solid $stretch-color;
+	@include border-radius(8px);
+	display: block;
+	background-color: darken($stretch-color, 30%);
+	color: white;
+	vertical-align: middle;
+	padding: 0.5em; 
+}
+
+.stretch-full {
+	@extend .stretched;
+	@include stretch; }
+
+.stretch-offset {
+	@extend .stretched;	
+	@include media(small) { @include stretch($v-stretch, $h-stretch / 2, $v-stretch, $h-stretch / 2); }
+	@include media(medium) { @include stretch($v-stretch, $h-stretch, $v-stretch, $h-stretch); }
+	@include media(wide) { @include stretch($v-stretch, $h-stretch * 1.2, $v-stretch, $h-stretch * 1.2); }
+}
+
 .stretch-x {
-  @extend .stretched;
-  @include stretch-x; }
- 
+	@extend .stretched;
+	@include stretch-x; }
+
 .stretch-y {
-  @extend .stretched;
-  @include stretch-y; }
-
-
+	@extend .stretched;
+	@include stretch-y; }

@@ -3,11 +3,23 @@ layout: default
 title: Your New Jekyll Site
 ---
 
-<header class="sidebar">mauro.io</header>
-<section class="content">
-  {% for post in site.posts %}
-    <article><time>{{ post.date | date_to_string }}</time>
-      {{ post.content }}
-    </article>
-  {% endfor %}
-</section>
+<div class="mauroio">
+	<header>mauro.io</header>
+
+	<div class="posts">
+		<section>
+			{% for post in site.posts %}
+			<div class="post">
+				<time class="date">
+					<div class="day">{{ post.date | date: "%d" | plus:'0' }}</div>
+					<div class="month">{{ post.date | date: "%m" | plus:'0' }}</div>
+				</time>
+
+				<article class="post-content">
+					{{ post.content }}
+				</article>
+			</div>
+			{% endfor %}
+		</section>
+	</div>
+</div>
