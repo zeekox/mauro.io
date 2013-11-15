@@ -3,10 +3,8 @@ layout: default
 ---
 <article class="post">
 	
-	<time class="date">
-		<div class="day">{{ page.date | date: "%d" | plus:'0' }}</div>
-		<div class="month">{{ page.date | date: "%m" | plus:'0' }}</div>
-	</time>
+	<header>{{page.title}}</header>
+	<time class="date">{{ page.date | date: "%-d %B %Y" }} </time>
 
 	<article class="post-content">
 		{{ content }}

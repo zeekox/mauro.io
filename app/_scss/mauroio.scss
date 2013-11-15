@@ -1,6 +1,7 @@
 @import "compass/utilities";
 @import "compass/css3";
 @import "compass/typography/vertical_rhythm";
+@import "compass/css3/shared";
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:400);
 
 $base-font-size: 20px;
@@ -68,20 +69,20 @@ a:hover, a:active {
 
 	background-color: lighten(invert($base-color), 20%);
 
-
 	color: $text-color;
 	
 	padding: 0.5em; 
 
-	header {
-		@include adjust-font-size-to(42px);
-	}
-
 	.post {
 
-		.date {
-			@include adjust-font-size-to(35px);
+		header {
+			display: inline-block;
+			margin-right: 1em;
+			@include word-break(break-all);
+		}
 
+		.date {
+			@include adjust-font-size-to(15px);
 		} 
 
 	}
