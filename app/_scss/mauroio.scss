@@ -2,6 +2,7 @@
 @import "compass/css3";
 @import "compass/typography/vertical_rhythm";
 @import "compass/css3/shared";
+@import "compass/typography/lists/bullets";
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:400);
 
 $base-font-size: 20px;
@@ -9,6 +10,7 @@ $base-line-height: 24px;
 
 $base-color: #3f3f3f;
 $text-color: darken($base-color, 30%);
+$title-color: #8cd859;
 
 @include establish-baseline;
 
@@ -71,14 +73,40 @@ a:hover, a:active {
 
 	color: $text-color;
 	
-	padding: 0.5em; 
+	padding: 0.5em;
+
+	.post_links {
+
+		$border: 1px solid $base-color;
+
+		ul {
+		  padding: 0px;
+		} 
+
+		li {
+			@include no-bullet;
+			border-bottom: $border;
+			border-top: $border;
+			margin-bottom: -1px;
+			padding: .5em 1.65em .5em .5em;
+		}
+
+		li:hover {
+			transition: opacity .2s ease-in-out;
+			opacity: 0.6;
+		}
+
+		a:hover, a:active {
+			opacity: 1;
+		}
+	}
 
 	.post {
 
 		header {
-			display: inline-block;
 			margin-right: 1em;
 			@include word-break(break-all);
+			color: $title-color;
 		}
 
 		.date {
