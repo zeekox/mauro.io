@@ -2,5 +2,14 @@
 layout: default
 ---
 <article class="post">
-{{ content }}
+	
+	<time class="date">
+		<div class="day">{{ page.date | date: "%d" | plus:'0' }}</div>
+		<div class="month">{{ page.date | date: "%m" | plus:'0' }}</div>
+	</time>
+
+	<article class="post-content">
+		{{ content }}
+	</article>
+
 </article>
