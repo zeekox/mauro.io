@@ -75,7 +75,7 @@ a:hover, a:active {
 	
 	padding: 0.5em;
 
-	.post_links {
+	.list_over {
 
 		$border: 1px solid $base-color;
 
@@ -85,17 +85,25 @@ a:hover, a:active {
 
 		li {
 			@include no-bullet;
-			border-bottom: $border;
 			border-top: $border;
-			margin-bottom: -1px;
 			padding: .5em 1.65em .5em .5em;
 		}
 
 		li:hover {
 			transition: opacity .2s ease-in-out;
 			opacity: 0.6;
+			border-bottom: $border;
 		}
 
+		li:hover + li {
+			border-top: 0px;
+		}
+
+		li:last-child {
+			border-bottom: $border;
+		}
+
+		// avoid general over effect
 		a:hover, a:active {
 			opacity: 1;
 		}

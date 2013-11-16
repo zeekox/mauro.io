@@ -3,12 +3,22 @@ layout: default
 title: Mauro Carabotii, Developer & Cyclist
 ---
 
-Mauro Carabotti
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra, nibh vitae commodo tristique, urna enim iaculis enim, eu eleifend turpis urna non mi. Suspendisse et orci libero. Sed vestibulum mauris et suscipit dictum. Nunc venenatis mi et ipsum malesuada, nec convallis neque tincidunt. Donec sit amet orci urna. In ultrices lacinia quam, vel tristique metus condimentum sit ame.:
 
-Hello here I tell about my life
-
-<article class="post_links">
+### Blog
+<article class="list_over">
 {% for post in site.posts %}
-- <a href="{{ post.url }}">{{ post.title }}</a>
+- [{{ post.title }}]({{ post.url }})
+- Some other link
+- even more...
+- ... and more examples
 {% endfor %}
+</article>
+
+### Contact
+<article class="list_over">
+
+- Email
+- Github
+
 </article>
