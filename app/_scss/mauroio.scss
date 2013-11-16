@@ -7,12 +7,13 @@
 
 $base-font-size: 20px;
 $base-line-height: 24px;
+@include establish-baseline;
 
 $base-color: #3f3f3f;
 $text-color: darken($base-color, 30%);
 $title-color: #8cd859;
 
-@include establish-baseline;
+$border: 1px solid $base-color;
 
 $break-small: 1024px;
 $break-large: 1800px;
@@ -79,8 +80,6 @@ a:hover, a:active {
 
 	.list_over {
 
-		$border: 1px solid $base-color;
-
 		ul {
 		  padding: 0px;
 		} 
@@ -116,7 +115,16 @@ a:hover, a:active {
 		header {
 			margin-right: 1em;
 			@include word-break(break-all);
-			color: $title-color;
+
+			h2 {
+				@include adjust-font-size-to(25px,.9);
+				padding-bottom: 0em;
+				margin-bottom: 0px;
+				border-bottom: $border;
+			}
+			.date {
+				text-align: right;
+			}
 		}
 
 		.date {
