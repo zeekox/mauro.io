@@ -117,19 +117,22 @@ a:hover, a:active {
 			@include word-break(break-all);
 
 			h2 {
-				@include adjust-font-size-to(25px,.9);
+				@include adjust-font-size-to(25px, .9);
 				padding-bottom: 0em;
 				margin-bottom: 0px;
 				border-bottom: $border;
 			}
-			.date {
+			
+			time {
+				display: block;
 				text-align: right;
-			}
+				@include adjust-font-size-to(15px, .7);
+				padding-bottom: 0em;
+				padding-top: 0.1em;
+			} 
 		}
 
-		.date {
-			@include adjust-font-size-to(15px);
-		} 
+
 
 	}
 }

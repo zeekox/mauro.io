@@ -1,15 +1,17 @@
 ---
 layout: default
 ---
-<article class="post">
+<section class="post">
 	
   <header>
     <h2>{{page.title}}</h2>
-	  <time class="date">{{ page.date | date: "%-d %B %Y" }} </time>
+    <time datetime="{{ page.date | date_to_xmlschema }}">
+      {{ page.date | date: "%-d %B %Y" | downcase }}
+    </time>
   </header>
 
-	<article class="post-content">
+	<article>
 		{{ content }}
 	</article>
 
-</article>
+</section>
