@@ -1,23 +1,33 @@
 ---
 layout: default
-title: Mauro Carabotii, Developer & Cyclist
+title: Mauro Carabotti, Software Developer, Engineer & Cyclist
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra, nibh vitae commodo tristique, urna enim iaculis enim, eu eleifend turpis urna non mi. Suspendisse et orci libero. Sed vestibulum mauris et suscipit dictum. Nunc venenatis mi et ipsum malesuada, nec convallis neque tincidunt. Donec sit amet orci urna. In ultrices lacinia quam, vel tristique metus condimentum sit ame.:
+Bonjour! I'm *Mauro*, software developer, engineer, cyclist and sport enthousiast. This is my personal page where you can find informations about *Mauro Carabotti* and blog posts about software and more. 
+
+My mother language is french, but I live and work in the german speaking part of Switzerland, that's why I write in english... more people can read it.
 
 <section>
-<nav class="list_over">
+<nav>
 
 ### Blog
 {% for post in site.posts %}
 - [{{ post.title }}]({{ post.url }})
 - Some other link
 - even more...
-- ... and more examples
+- more... -> expand with js
 {% endfor %}
+
+
+### Race results
 
 ### Contact
 
+You can contact me in french, german and english. And also in italian and spanish if it's better for you.
+
+Icons!
+
+- Google+ 
 - Email
 - Github
 
