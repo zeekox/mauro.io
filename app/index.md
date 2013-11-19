@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Mauro Carabotti, Software Developer, Engineer & Cyclist
+title: Mauro Carabotti, Software Engineer & Cyclist
 ---
 
-Bonjour! I'm *Mauro*, software developer, engineer, cyclist and sport enthousiast. This is my personal page where you can find informations about *Mauro Carabotti* and blog posts about software and more. 
+Bonjour! I'm *Mauro*, software engineer, cyclist and sport enthusiast. On my personal page you find information about me, *Mauro Carabotti*, and some blog posts about software and more. 
 
-My mother language is french, but I live and work in the german speaking part of Switzerland, that's why I write in english... more people can read it.
+My native language is french, but I live and work in the German speaking part of Switzerland since 2009, that's why I write in English... but also because more people understand it.
 
 <section>
-<nav>
+<Nav>
 
 ### Blog
 {% for post in site.posts %}
@@ -18,18 +18,18 @@ My mother language is french, but I live and work in the german speaking part of
 - more... -> expand with js
 {% endfor %}
 
-
-### Race results
-
 ### Contact
 
-You can contact me in french, german and english. And also in italian and spanish if it's better for you.
+Get in touch with me in French, German or English. And also in Italian or Spanish if it is better for you.
 
-Icons!
-
-- Google+ 
 - Email
-- Github
+- [Google+](https://plus.google.com/+MauroCarabottiPlus) 
+- [GitHub](https://github.com/zeekox)
+- [Scrum Alliance](http://www.scrumalliance.org/community/profile/mcarabotti)
+
+### Mountain Bike Racing
+
+I currently race for the [Alouette Racing Team](http://www.alouettes.ch/v%C3%A9los-bikes/team-alouettes-ch-1/carabotti-mauro/)  
 
 </nav>
 </section>
