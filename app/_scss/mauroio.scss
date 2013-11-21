@@ -33,13 +33,15 @@ textarea {
 }
 
 a, a:visited {
-	text-decoration: none;
+	text-decoration: underline;
 	transition: opacity .2s ease-in-out;
 	color: $text-color;
+	text-shadow: 0 0 4px #000;
 }
 
 a:hover, a:active {
 	opacity: .6;
+	text-shadow: 0 0 10px #000;
 }
 
 @mixin media($media) {
@@ -118,8 +120,10 @@ a:hover, a:active {
 		}
 
 		// avoid general over effect
-		li a:hover, a:active {
+		li a, a:hover, a:active {
 			opacity: 1;
+			text-decoration: none;
+			text-shadow: 0;
 		}
 	}
 
