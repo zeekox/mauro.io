@@ -33,15 +33,16 @@ textarea {
 }
 
 a, a:visited {
-	text-decoration: underline;
+	text-decoration: none;
 	transition: opacity .2s ease-in-out;
 	color: $text-color;
-	text-shadow: 0 0 4px #000;
+	text-shadow: 0 0 1px #000;
 }
 
 a:hover, a:active {
-	opacity: .6;
+	opacity: 1.5;
 	text-shadow: 0 0 10px #000;
+	text-decoration: underline;
 }
 
 @mixin media($media) {
@@ -106,9 +107,13 @@ a:hover, a:active {
 		}
 
 		li:hover {
+			border-bottom: $border;
+		}
+
+		li:hover, li:hover > * {
 			transition: opacity .2s ease-in-out;
 			opacity: 0.6;
-			border-bottom: $border;
+			text-shadow: 0 0 10px #000;
 		}
 
 		li:hover + li {
@@ -119,11 +124,9 @@ a:hover, a:active {
 			border-bottom: $border;
 		}
 
-		// avoid general over effect
-		li a, a:hover, a:active {
-			opacity: 1;
+		li a, li > a:hover, li:hover > * {
 			text-decoration: none;
-			text-shadow: 0;
+			opacity: 1;
 		}
 	}
 
