@@ -1,8 +1,0 @@
-mauro.io
-========
-
-Personal website powered by Jekyll of Mauro Carabotti (zeekox) hosted on GitHub pages.
-
-Scaffolding with Yeoman, using Grunt for building it and bower for dependencies, see [mauro.io](mauro.io) for more infos.
-
-
