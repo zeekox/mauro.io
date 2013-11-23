@@ -60,30 +60,68 @@ a:hover, a:active {
 	}
 }
 
+// to be used in js
+@include media(small) { 
+	body:after{
+		content: 'small';
+		display: none;
+	}
+}
+@include media(medium) {
+	body:after{
+		content: 'medium';
+		display: none;
+	}
+}
+
 .mauroio {
 	max-width: 777px;
 	margin-left: auto;
 	margin-right: auto;
 
+	@include border-radius(8px);	
+	background-color: lighten(invert($base-color), 20%);
+	color: $text-color;
+
+	> section {
+		padding: 0 1em 1em 1em;
+	}
+
 	@include media(small) { 
 		margin: 0.6em;
-		padding: 1em;
 		box-shadow: 0 0 1em #000;
+		p { margin-top: 0; }
 	}
+
 	@include media(medium) {
 		margin-top: 1.5em;
 		margin-bottom: 3em;
-		padding: 1em;
 		box-shadow: 0 0 2em #000;
 	}
 
-	@include border-radius(8px);
+	header
+	{
+		margin-top: 0;
 
-	background-color: lighten(invert($base-color), 20%);
+		a {
+			> * {
+				margin-top: 0.1em;
+				display: inline-block;
+				vertical-align: middle;
+			}
+			> h1 {
+				@include media(small) { width: calc(100% - 50px - 6px - 0.25em); }
+				@include media(medium) { width: calc(100% - 70px - 6px - 0.25em); }
+			}
 
-	color: $text-color;
-
-	padding: 0.5em;
+			> img {
+				@include border-radius(50%);
+				margin-top: -1.9em;
+				@include media(small) { margin-top: -1.4em; }
+				margin-right: 0.11em;
+				box-shadow: 0 0 0.5em #000;
+			}}
+	}
 
 	nav {
 
@@ -133,8 +171,11 @@ a:hover, a:active {
 	.post {
 
 		header {
-			margin-right: 1em;
 			@include word-break(break-all);
+
+			> * {
+				display: block;
+			}
 
 			h2 {
 				@include adjust-font-size-to(25px, .9);
@@ -144,7 +185,6 @@ a:hover, a:active {
 			}
 
 			time {
-				display: block;
 				text-align: right;
 				@include adjust-font-size-to(15px, .7);
 				padding-bottom: 0em;
