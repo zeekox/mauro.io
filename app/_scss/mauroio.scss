@@ -87,14 +87,19 @@ a:hover, a:active {
 		padding: 0 1em 1em 1em;
 	}
 
+	h2, h3, h4 {
+		margin-bottom: 0.5em;
+	}
+
+	p { margin-top: 0 }
+
 	@include media(small) { 
 		margin: 0.6em;
 		box-shadow: 0 0 1em #000;
-		p { margin-top: 0; }
 	}
 
 	@include media(medium) {
-		margin-top: 1.5em;
+		margin-top: 1.2em;
 		margin-bottom: 3em;
 		box-shadow: 0 0 2em #000;
 	}
@@ -104,11 +109,13 @@ a:hover, a:active {
 		margin-top: 0;
 
 		a {
+			
 			> * {
 				margin-top: 0.1em;
 				display: inline-block;
 				vertical-align: middle;
 			}
+		
 			> h1 {
 				@include media(small) { width: calc(100% - 50px - 6px - 0.25em); }
 				@include media(medium) { width: calc(100% - 70px - 6px - 0.25em); }
@@ -120,12 +127,13 @@ a:hover, a:active {
 				@include media(small) { margin-top: -1.4em; }
 				margin-right: 0.11em;
 				box-shadow: 0 0 0.5em #000;
-			}}
+			}
+		}
 	}
 
 	nav {
 
-		h2:after, h3:after, {
+		h2:after, h3:after, h4:after {
 			content: " ";
 			position: absolute;
 			background: $selection-color;

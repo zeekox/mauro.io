@@ -6,27 +6,25 @@ Bonjour! I'm *Mauro*, software engineer, cyclist and sport enthusiast. On my per
 
 My native language is french, but I live and work in the German speaking part of Switzerland since 2009, that's why I write in English... but also because more people understand it.
 
+I mainly speak Java, Javascript, SQL, Bash, HTML5 and CSS3. And Ruby and Python(s) don't make me affraid. In the past I expresed myself in C# and Delphi but I don't do that any more.
+
 <Nav>
+
+### About
+
+- [GitHub](https://github.com/zeekox) projects
+- [Certified ScrumMaster](http://www.scrumalliance.org/community/profile/mcarabotti) certificate
+
+#### Mountain Bike Racing
+I currently race for the [Alouette Racing Team](http://www.alouettes.ch/v%C3%A9los-bikes/team-alouettes-ch-1/carabotti-mauro/), some of my race results are avaible on [Datasport](http://services.datasport.com/myDSinfo.htm?acode=2518US5CL&r=1204.4516290328465).
 
 ### Blog
 {% for post in site.posts %}
 - [{{ post.title }}]({{ post.url }})
-- Some other link
-- even more...
-- more... -> expand with js
 {% endfor %}
 
 ### Contact
 
-Get in touch with me in French, German or English. And also in Italian or Spanish if it is better for you.
-
-- Email
-- [Google+](https://plus.google.com/+MauroCarabottiPlus) 
-- [GitHub](https://github.com/zeekox)
-- [Scrum Alliance](http://www.scrumalliance.org/community/profile/mcarabotti)
-
-### Mountain Bike Racing
-
-I currently race for the [Alouette Racing Team](http://www.alouettes.ch/v%C3%A9los-bikes/team-alouettes-ch-1/carabotti-mauro/)  
+Send me an <a href="bli@bla.blu" alt="contact me">Email</a> or use [Google+](https://plus.google.com/+MauroCarabottiPlus).
 
 </nav>
