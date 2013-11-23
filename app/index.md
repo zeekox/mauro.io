@@ -25,6 +25,6 @@ I currently race for the [Alouette Racing Team](http://www.alouettes.ch/v%C3%A9l
 
 ### Contact
 
-Send me an <a href="bli@bla.blu" alt="contact me">Email</a> or use [Google+](https://plus.google.com/+MauroCarabottiPlus).
+Send me an <a class="courriel" href="mailto:zeekox@[replace%20this%20with%20'g']mail.com?Subject=Hello%20mauro.io">Email</a> or use [Google+](https://plus.google.com/+MauroCarabottiPlus).
 
 </nav>

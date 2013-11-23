@@ -8,7 +8,7 @@
 				$(this).attr('src', img_url);
 			});
 
-			$('nav li').on('click', function(e) {
+			$('nav li').click(function(e) {
 				var li = $(this);
 
 				if ( !$(e.target).is('a') ){
@@ -17,6 +17,5 @@
 				}
 
 			});
-
 		});
 }());
