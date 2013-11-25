@@ -1,4 +1,4 @@
-(function() {
+(function($) {
 		$(document).ready(function() {
 
 			var size = window.getComputedStyle(document.body,':after').getPropertyValue('content');
@@ -18,4 +18,4 @@
 
 			});
 		});
-}());
+}(jQuery));

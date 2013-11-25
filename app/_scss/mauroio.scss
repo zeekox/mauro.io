@@ -109,13 +109,13 @@ a:hover, a:active {
 		margin-top: 0;
 
 		a {
-			
+
 			> * {
 				margin-top: 0.1em;
 				display: inline-block;
 				vertical-align: middle;
 			}
-		
+
 			> h1 {
 				@include media(small) { width: calc(100% - 50px - 6px - 0.25em); }
 				@include media(medium) { width: calc(100% - 70px - 6px - 0.25em); }
@@ -131,49 +131,47 @@ a:hover, a:active {
 		}
 	}
 
-	nav {
 
-		h2:after, h3:after, h4:after {
-			content: " ";
-			position: absolute;
-			background: $selection-color;
-			margin: .4em .2em;
-			width: .5em;
-			height: .5em;
-		}
+	h2:after, h3:after, h4:after {
+		content: " ";
+		position: absolute;
+		background: $selection-color;
+		margin: .4em .2em;
+		width: .5em;
+		height: .5em;
+	}
 
-		ul {
-			padding: 0px;
-		} 
+	ul {
+		padding: 0px;
+	} 
 
-		li {
-			@include no-bullet;
-			border-top: $border;
-			padding: .5em 1.65em .5em .5em;
-		}
+	li {
+		@include no-bullet;
+		border-top: $border;
+		padding: .5em 1.65em .5em .5em;
+	}
 
-		li:hover {
-			border-bottom: $border;
-		}
+	li:hover {
+		border-bottom: $border;
+	}
 
-		li:hover, li:hover > * {
-			transition: opacity .2s ease-in-out;
-			opacity: 0.6;
-			text-shadow: 0 0 10px #000;
-		}
+	li:hover, li:hover > * {
+		transition: opacity .2s ease-in-out;
+		opacity: 0.6;
+		text-shadow: 0 0 10px #000;
+	}
 
-		li:hover + li {
-			border-top: 0;
-		}
+	li:hover + li {
+		border-top: 0;
+	}
 
-		li:last-child {
-			border-bottom: $border;
-		}
+	li:last-child {
+		border-bottom: $border;
+	}
 
-		li a, li > a:hover, li:hover > * {
-			text-decoration: none;
-			opacity: 1;
-		}
+	li a, li > a:hover, li:hover > * {
+		text-decoration: none;
+		opacity: 1;
 	}
 
 	.post {

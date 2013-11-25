@@ -8,8 +8,6 @@ My native language is french, but I live and work in the German speaking part of
 
 I mainly speak Java, Javascript, SQL, Bash, HTML5 and CSS3. And Ruby and Python(s) don't make me afraid. In the past I expressed myself in C# and Delphi but I don't do that any more.
 
-<Nav>
-
 ### About
 
 - [GitHub](https://github.com/zeekox) projects
@@ -26,5 +24,3 @@ I currently race for the [Alouette Racing Team](http://www.alouettes.ch/v%C3%A9l
 ### Contact
 
 Send me an <a class="courriel" href="mailto:zeekox@[replace%20this%20with%20'g']mail.com?Subject=Hello%20mauro.io">Email</a> or use [Google+](https://plus.google.com/+MauroCarabottiPlus).
-
-</nav>
