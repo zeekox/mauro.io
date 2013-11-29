@@ -4,11 +4,9 @@
 @import "compass/css3/shared";
 @import "compass/typography/lists/bullets";
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:400);
+@import url(http://fonts.googleapis.com/css?family=Sanchez);
 
-$base-font-size: 20px;
-$base-line-height: 24px;
-@include establish-baseline;
-
+$width: 777px;
 $base-color: #3f3f3f;
 $text-color: darken($base-color, 30%);
 $title-color: #8cd859;
@@ -16,7 +14,7 @@ $selection-color: #72dcac;
 
 $border: 1px solid $base-color;
 
-$break-small: 1024px;
+$break-small: 600px;
 $break-large: 1800px;
 
 html,
@@ -25,7 +23,11 @@ input,
 select,
 textarea {
 	background-color: $base-color;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Roboto+Slab', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, a, a:visited {
+	font-family: 'Sanchez', serif;
 }
 
 ::selection {
@@ -66,16 +68,28 @@ a:hover, a:active {
 		content: 'small';
 		display: none;
 	}
+
+	$base-font-size: 14.5px;
+	$base-line-height: 17px;
+	@include establish-baseline;
+
 }
+
 @include media(medium) {
 	body:after{
 		content: 'medium';
 		display: none;
 	}
+
+	$base-font-size: 19px;
+	$base-line-height: 23px;
+	@include establish-baseline;
+
 }
 
+
 .mauroio {
-	max-width: 777px;
+	max-width: $width;
 	margin-left: auto;
 	margin-right: auto;
 
@@ -132,7 +146,7 @@ a:hover, a:active {
 	}
 
 
-	h2:after, h3:after, h4:after {
+	h1:after, h2:after, h3:after, h4:after {
 		content: " ";
 		position: absolute;
 		background: $selection-color;
@@ -175,6 +189,11 @@ a:hover, a:active {
 	}
 
 	.post {
+
+		h2:after {
+			display: none;
+			width: 0;
+		}
 
 		header {
 			@include word-break(break-all);
