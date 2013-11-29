@@ -8,7 +8,7 @@
 				$(this).attr('src', img_url);
 			});
 
-			$('nav li').click(function(e) {
+			$('li').click(function(e) {
 				var li = $(this);
 
 				if ( !$(e.target).is('a') ){
