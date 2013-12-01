@@ -3,7 +3,7 @@ layout: post
 title:  "This is how I made this website"
 ---
 
-This website was scaffolded with the wonderful [yeoman](http://yeoman.io) and this [generator-jekyllrb](https://github.com/robwierzbowski/generator-jekyllrb).
+This website was scaffolded with the wonderful [yeoman](http://yeoman.io) and [generator-jekyllrb](https://github.com/robwierzbowski/generator-jekyllrb).
 
 Under the hood it uses:
 
@@ -16,3 +16,5 @@ Under the hood it uses:
 - [Pygments](http://pygments.org) syntax highlighter
 - [Robot Slab](http://www.google.com/fonts/specimen/Roboto+Slab) font for paragraphs
 - [Sanchez](http://www.google.com/fonts/specimen/Sanchez) font for titles
+
+It is hosted on [GitHub Pages](http://pages.github.com/), thank you for the free hosting, Git rocks!

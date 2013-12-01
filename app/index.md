@@ -6,7 +6,7 @@ Bonjour! I'm Mauro, software engineer, cyclist and sport enthusiast. On my perso
 
 My native language is french, but I live and work in the German speaking part of Switzerland since 2009, that's why I write in English... but also because more people understand it.
 
-I mainly speak Java, Javascript, SQL, Bash, HTML5 and CSS3. And Ruby and Python(s) don't make me afraid. In the past I expressed myself in C# and Delphi but I don't do that any more.
+I enjoy writing well structured and efficient code. My programming languages of choice are Java, JavaScript and Bash. In the past I used to code in C# and Delphi but I don't do that any more. I am currently Software Engineer and Scrum Master at [Puzzle ITC](http://puzzle.ch) in Bern, Switzerland.
 
 - [GitHub](https://github.com/zeekox) projects
 - [Certified ScrumMaster](http://www.scrumalliance.org/community/profile/mcarabotti) certificate
@@ -21,4 +21,4 @@ I currently race for the [Alouette Racing Team](http://www.alouettes.ch/v%C3%A9l
 
 ## Contact
 
-Send me an <a class="courriel" href="mailto:zeekox@[replace%20this%20with%20'g']mail.com?Subject=Hello%20mauro.io">Email</a> or use [Google+](https://plus.google.com/+MauroCarabottiPlus).
+Send me an <a href="mailto:zeekox@g***l.com?Subject=Hello%20mauro.io&Body=Replace%20g***l%20with%20'gmail'">Email</a> or use [Google+](https://plus.google.com/+MauroCarabottiPlus).

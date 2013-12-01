@@ -219,8 +219,11 @@ a:hover, a:active {
 				padding-top: 0.1em;
 			} 
 		}
+	}
 
-
-
+	footer {
+		@include adjust-font-size-to(11px, .7);
+		text-align: center;
+		margin: 0 0.5em;
 	}
 }
