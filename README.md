@@ -8,7 +8,7 @@ Scaffolding with Yeoman, using Grunt for building it and bower for dependencies,
 
 ##License
 
-The following files and directories and their contents are Copyright Mauro Carabottti:
+The following files and directories and their contents are Copyright Mauro Carabotti:
 
 - app/index.md
 - app/_posts/
