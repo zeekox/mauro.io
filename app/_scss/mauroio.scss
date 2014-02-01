@@ -129,22 +129,24 @@ a:hover, a:active {
 				display: inline-block;
 				vertical-align: middle;
 			}
-
-			> h1 {
-				@include media(small) { width: calc(100% - 50px - 6px - 0.25em); }
-				@include media(medium) { width: calc(100% - 70px - 6px - 0.25em); }
-			}
-
-			> img {
-				@include border-radius(50%);
-				margin-top: -1.9em;
-				@include media(small) { margin-top: -1.4em; }
-				margin-right: 0.11em;
-				box-shadow: 0 0 0.5em #000;
-			}
 		}
 	}
 
+	section {
+		p:first-child , p:nth-child(2) {
+			display: inline-block;
+			vertical-align: top;
+		}
+		p:first-child {
+			width: 74%;
+			@include media(small) { width: calc(100% - 70px - 5px); }
+			@include media(medium) { width: calc(100% - 120px - 5px); }
+		}
+		img.portrait {
+			border-radius: 2%;
+			box-shadow: 0 0 0.3em #000;
+		}
+	}
 
 	h1:after, h2:after, h3:after, h4:after {
 		content: " ";
