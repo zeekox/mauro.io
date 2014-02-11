@@ -23,3 +23,7 @@ I currently race for the [Alouette Racing Team](http://www.alouettes.ch/v%C3%A9l
 ## Contact
 
 Send me an <a href="mailto:zeekox@g***l.com?Subject=Hello%20mauro.io&Body=Replace%20g***l%20with%20'gmail'">Email</a> or use [Google+](https://plus.google.com/+MauroCarabottiPlus).
+
+<div class="idl">
+<a href="http://internetdefenseleague.org"><img src="http://internetdefenseleague.org/images/badges/final/shield_badge.png" alt="Member of The Internet Defense League"/></a>
+</div>

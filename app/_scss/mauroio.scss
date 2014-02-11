@@ -87,7 +87,6 @@ a:hover, a:active {
 
 }
 
-
 .mauroio {
 	max-width: $width;
 	margin-left: auto;
@@ -227,5 +226,13 @@ a:hover, a:active {
 		@include adjust-font-size-to(11px, .7);
 		text-align: center;
 		margin: 0 0.5em;
+	}
+}
+
+.idl {
+	text-align: center;
+
+	img {
+		width: 150px;
 	}
 }
