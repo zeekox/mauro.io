@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "You need a Backup"
+---
+
+You need a Backup and everyone does. Some reasons for it, I find important and wisdom gathered from colleagues.
+
+I you use a NAS (with or without some RAID) or some other system using proprietary software, be sure to be able to mount your disks without it.
+
+Don't use backup software creating copies you can only read with THAT software. Create your own full copies, readable from any computer (after properly mounting it).
+
+Be sure to be able to read your disks without your NAS. So mount it on an other computer before copying your whole life on it.
+
+A good NAS with RAID 1 is great but not fire proof. Copy your files to an external drive that you store in at an other location (for example at work).
+
+Don't overwrite a single backup copy, if it is corrupt you lost all backup. Use backup rotation, to store for example the last five copies or more. With this kind of solution you can also go back in time if your overwrite some files or need a previous version of some piece of data.
+
+Use hard-links to save space if you can. Storing full copies of your data is space consuming, creating hard-links for files that did not change since last backup save a lot of disk-space.
+
