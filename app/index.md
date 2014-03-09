@@ -14,7 +14,7 @@ I enjoy writing well structured and efficient code. My programming languages of 
 - [Certified ScrumMaster](http://www.scrumalliance.org/community/profile/mcarabotti) certificate
 
 ## Mountain Bike Racing
-I currently race for the [Alouette Racing Team](http://www.alouettes.ch/v%C3%A9los-bikes/team-alouettes-ch-1/carabotti-mauro/), some of my race results are available on [Datasport](http://services.datasport.com/myDSinfo.htm?acode=2518US5CL&r=1204.4516290328465).
+I currently race for the [Alouette Racing Team](http://www.alouettes.ch/v%C3%A9los-accessoires-ski/team-alouettes-ch/carabotti-mauro/), some of my race results are available on [Datasport](http://services.datasport.com/myDSinfo.htm?acode=2518US5CL&r=1204.4516290328465).
 
 ## Blog
 {% for post in site.posts %} 
