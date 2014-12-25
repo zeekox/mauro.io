@@ -163,6 +163,7 @@ a:hover, a:active {
 			@include no-bullet;
 			border-top: $border;
 			padding: .5em 1.65em .5em .5em;
+			cursor: pointer;
 		}
 
 		li:hover {
