@@ -13,6 +13,6 @@ During the search of fonts for this website I came across the following fonts I 
 
 By the way I chose those:
 
-- [Robot Slab](http://www.google.com/fonts/specimen/Roboto+Slab) for paragraphs
+- [Roboto Slab](http://www.google.com/fonts/specimen/Roboto+Slab) for paragraphs
 - [Sanchez](http://www.google.com/fonts/specimen/Sanchez) for titles
 
