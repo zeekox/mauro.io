@@ -2,7 +2,7 @@
 layout: default
 title: Mauro Carabotti, Software Engineer & Cyclist
 ---
-Bonjour! I'm Mauro, software engineer, cyclist and sport enthusiast. On my personal page you find information about me, Mauro Carabotti, and some blog posts about software and more. 
+Bonjour! My name is Mauro, software engineer, cyclist and sport enthusiast. On my personal page you find information about me, Mauro Carabotti, and some blog posts about software and more. 
 
 <img class="portrait" src="https://s.gravatar.com/avatar/ed76a161955566348dce01b41c7c1177?s=70" data-small="70" data-medium="120"/>
 
@@ -13,8 +13,10 @@ I enjoy writing well structured and efficient code. My programming languages of 
 - [GitHub](https://github.com/zeekox) projects
 - [Certified ScrumMaster](http://www.scrumalliance.org/community/profile/mcarabotti) certificate
 
-## Mountain Bike Racing
-I currently race for the [Alouette Racing Team](http://www.alouettes.ch/v%C3%A9los-accessoires-ski/team-alouettes-ch/carabotti-mauro/), some of my race results are available on [Datasport](http://services.datasport.com/myDSinfo.htm?acode=2518US5CL&r=1204.4516290328465).
+## Cycling
+I enjoy riding all kind of bicycles but most of the time it's on a road bike or a mountain bike. 
+
+Some of my race results are available on [Datasport](http://services.datasport.com/myDSinfo.htm?acode=2518US5CL&r=1204.4516290328465), but now I prefer to ride without competition.
 
 ## Blog
 {% for post in site.posts %} 
