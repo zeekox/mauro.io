@@ -3,6 +3,8 @@ layout: post
 title:  "You need a Backup"
 ---
 
+**UPDATE**: I now use a simple external disk to store my backups, the script support both modes, ssh or local target.
+
 You need a Backup and everyone does. Some reasons for it that I find important and wisdom gathered from colleagues.
 
 1. I you use a NAS (with or without RAID) or some other system using proprietary software, be sure to be able to mount your disks without it.
@@ -28,9 +30,9 @@ The [Synology DS214+](http://www.synology.com/en-global/products/overview/DS214+
 
 I configured it in RAID-1 because and don't want to rely on Synology Hybrid Raid technology so that I can mount the disks in another computer (see point 4 above).
 
-Then I configured my NAS to be allow SSH connections, and [uploaded my public key](http://smbjorklund.no/ssh-login-without-password-using-os-x) so that the connection does not require a password.
+Then I configured my NAS to be allow SSH connections, and uploaded my public key so that the connection does not require a password.
 
-Finally a wrote a [rsync based script](https://gist.github.com/zeekox/9311369) to perform the rotating backups over SSH (the script would also work to store the backups locally). And programmed it to run periodically using CRON.
+Finally a wrote a [rsync based script](https://github.com/zeekox/configs/blob/puzzle/utils/rsync_backup) to perform the rotating backups over SSH (the script would also work to store the backups locally). And programmed it to run periodically using CRON.
 
 As I don't wanted my NAS to run all day for nothing I configured it to started only a couple of ours some days of the week and configured the CRON entry to match those days. I also investigated a solution where I would start the NAS with Wake On Lan and stop it after the backup is performed. 
 

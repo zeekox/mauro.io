@@ -124,7 +124,8 @@ a:hover, a:active {
 		a {
 
 			> * {
-				margin-top: 0.1em;
+				margin-top: 0.3em;
+				margin-left: 0.5em;
 				display: inline-block;
 				vertical-align: middle;
 			}
@@ -224,16 +225,8 @@ a:hover, a:active {
 	}
 
 	footer {
-		@include adjust-font-size-to(11px, .7);
+		@include adjust-font-size-to(12px, 1);
 		text-align: center;
 		margin: 0 0.5em;
-	}
-}
-
-.idl {
-	text-align: center;
-
-	img {
-		width: 150px;
 	}
 }
