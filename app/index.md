@@ -4,8 +4,6 @@ title: Mauro Carabotti, Software Engineer & Cyclist
 ---
 Bonjour! My name is Mauro, software engineer, cyclist and sport enthusiast. On my personal page you find information about me, Mauro Carabotti, and some blog posts about software and more. 
 
-<img class="portrait" src="https://s.gravatar.com/avatar/ed76a161955566348dce01b41c7c1177?s=70" data-small="70" data-medium="120"/>
-
 My native language is french, I lived in the German speaking part of Switzerland and now in Colombia, that's why I write in English... but also because more people understand it.
 
 I enjoy writing well structured and efficient code. My programming languages of choice are Java, JavaScript and Bash. In the past I used to code in C# and Delphi but I don't do that any more.

@@ -142,9 +142,9 @@ a, a:visited {
 			vertical-align: top;
 		}
 		p:first-child {
-			width: 74%;
-			@include media(small) { width: calc(100% - 70px - 5px); }
-			@include media(medium) { width: calc(100% - 120px - 5px); }
+			//width: 74%;
+			//@include media(small) { width: calc(100% - 70px - 5px); }
+			//@include media(medium) { width: calc(100% - 120px - 5px); }
 		}
 		img.portrait {
 			border-radius: 2%;
